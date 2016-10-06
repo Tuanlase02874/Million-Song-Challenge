@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/millionsong/sites/default/files/favicon.ico" type="image/x-icon" />
+      <title>The musiXmatch Dataset | Million Song Dataset</title>
+      <link type="text/css" rel="stylesheet" media="all" href="/millionsong/modules/system/defaults.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/modules/system/system.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/modules/user/user.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/modules/cck/theme/content-module.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/modules/node/node.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/modules/forum/forum.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/modules/views/css/views.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/modules/addthis/addthis.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/modules/openid/openid.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/themes/sky/css/layout.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/themes/sky/style.css?F" />
+<link type="text/css" rel="stylesheet" media="all" href="/millionsong/sites/default/files/sky/custom.css?F" />
+      
+<!--[if lt IE 7.0]><link rel="stylesheet" href="/millionsong/sites/default/themes/sky/css/ie-6.css" type="text/css" media="all" charset="utf-8" /><![endif]-->
+<!--[if IE 7.0]><link rel="stylesheet" href="/millionsong/sites/default/themes/sky/css/ie-7.css" type="text/css" media="all" charset="utf-8" /><![endif]-->
+      <script type="text/javascript" src="/millionsong/misc/jquery.js?F"></script>
+<script type="text/javascript" src="/millionsong/misc/drupal.js?F"></script>
+<script type="text/javascript" src="/millionsong/sites/default/modules/google_analytics/googleanalytics.js?F"></script>
+<script type="text/javascript" src="/millionsong/sites/default/modules/poormanscron/poormanscron.js?F"></script>
+<script type="text/javascript" src="/millionsong//sites/default/js/randomTrack.js?F"></script>
+<script type="text/javascript" src="/millionsong//sites/default/js/randomIsmirPaper.js?F"></script>
+<script type="text/javascript" src="/millionsong/modules/openid/openid.js?F"></script>
+<script type="text/javascript" src="/millionsong/sites/default/themes/sky/scripts/hoverIntent.js?F"></script>
+<script type="text/javascript" src="/millionsong/sites/default/themes/sky/scripts/superfish.js?F"></script>
+<script type="text/javascript" src="/millionsong/sites/default/themes/sky/scripts/sky.js?F"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/millionsong/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "cron": { "basePath": "/millionsong/poormanscron", "runNext": 1475610253 } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+	    addthis_pub = 'millionsong';
+	    addthis_logo = 'http://www.addthis.com/images/yourlogo.png';
+	    addthis_logo_background = 'EFEFFF';
+	    addthis_logo_color = '666699';
+	    addthis_brand = 'Million Song Dataset';
+	    addthis_options = 'favorites, email, digg, delicious, myspace, facebook, google, live, twitter, more';
+	    addthis_disable_flash = 'false';
+	
+//--><!]]>
+</script>
+    </head>
+  <body class="page-node page-page page-node-view anonymous-user right" id="page-node-73">
+    <div id="wrapper">
+    <div id="header" class="layout-region name-logo">
+      <div id="header-inner">
+                <a href="/millionsong/" title="Million Song Dataset" id="logo"><img src="/millionsong/sites/default/files/millionsong2-128.jpg" alt="Million Song Dataset" /></a>
+                        <span id="site-name"> <a href="/millionsong/" title="Million Song Dataset">Million Song Dataset</a> </span>
+                      </div>
+    </div>
+          <div id="navigation"><del class="wrap-center"><ul><li class="leaf first"><a href="/millionsong/pages/welcome" title="Welcome!">Home</a></li>
+<li class="leaf"><a href="/millionsong/pages/getting-dataset" title="Getting the dataset">Getting the dataset</a></li>
+<li class="leaf"><a href="/millionsong/pages/code" title="Code">Code</a></li>
+<li class="collapsed"><a href="/millionsong/pages/tutorial" title="Tutorial">Tutorial</a></li>
+<li class="leaf"><a href="/millionsong/pages/tasks-demos" title="Tasks / Demos">Tasks / Demos</a></li>
+<li class="leaf"><a href="/millionsong/pages/additional-datasets" title="Additional datasets">More data</a></li>
+<li class="leaf"><a href="/millionsong/forum/1" title="User forum">Forum</a></li>
+<li class="leaf"><a href="/millionsong/faq" title="Frequently asked questions">FAQ</a></li>
+<li class="leaf"><a href="/millionsong/pages/contact-us" title="Contact us">Contact / Cite</a></li>
+<li class="leaf last"><a href="/millionsong/blog" title="Blog from the Million Song Dataset organizers">Blog</a></li>
+</ul></del></div>
+        <div id="container" class="layout-region">
+            <div id="main">
+        <div class="main-inner">
+                      <div class="breadcrumb clearfix"><div id="breadcrumbs" class="clearfix"><a href="/millionsong/">Home</a></div></div>
+                                                              <h1 class="title">The musiXmatch Dataset</h1>
+                                        <div id="content" class="clearfix">
+            <div id="node-73" class="node clearfix node-page node-full published not-promoted not-sticky without-photo ">
+    <div class="meta">
+                            </div>
+  <div class="content clearfix">
+    <p><center><a href="http://www.musixmatch.com"><img src="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/musixmatch_logo.png" /></a><br />
+</center></p>
+<p />
+</p><p>Welcome to the <strong>musiXmatch dataset</strong>, the official lyrics collection of the Million Song Dataset.</p>
+<p>The MSD team is proud to partner with <a href="http://www.musixmatch.com">musiXmatch</a> in order to bring you a large collection of song lyrics in bag-of-words format, for academic research. All of these lyrics are directly associated with MSD tracks: you can correlate them with all the data contained in the dataset such as similar artists, tags, years, audio features, etc.</p>
+<p>The musiXmatch team was able to resolve over <strong>77%</strong> of the MSD tracks; we provide the full <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_779k_matches.txt.zip">mapping of MSD IDs to musiXmatch IDs</a>.  Of these, we are releasing lyrics for 237,662 tracks (erratum: we had announced 237,701).   The other tracks were omitted for various reasons, including:<br />
+* diverse restrictions, including copyrights<br />
+* instrumental tracks<br />
+* the numerous <a href="http://labrosa.ee.columbia.edu/millionsong/blog/11-3-15-921810-song-dataset-duplicates">MSD duplicates</a> were skipped as much as possible<br />
+That said, with 237,662 bags-of-words, it is the largest, clean lyrics collection available for research!</p>
+<p><a href='#desc'>Description</a><br />
+<a href='#getting'>Getting the dataset</a><br />
+<a href='#api'>musiXmatch API</a><br />
+<a href='#faq'>FAQ</a><br />
+<a href='#work'>Work using the dataset</a></p>
+<p />
+<h2><a name='desc'>Description</a></h2>
+</p><p>The MXM dataset provides lyrics for many MSD tracks. The lyrics come in bag-of-words format: each track is described as the word-counts for a dictionary of the top <strong>5,000</strong> words across the set. Although copyright issues prevent us from distributing the full, original lyrics, we hope and believe that this format is for many purposes just as useful, and may be easier to use. </p>
+<p>The dataset comes in two text files, describing training and test sets. The split was done according to the split for tagging, see <a href="https://github.com/tb2332/MSongsDB/raw/master/Tasks_Demos/Tagging/artists_test.txt">tagging test artists</a>. There are 210,519 training bag-of-words, 27,143 testing ones. We also provide the full list of words with total counts across all tracks so you can measure the relative importance of the top 5,000.</p>
+<p>The two text files are formatted as follow (per line):<br />
+# <span style="padding-left:168px"></span> - comment, ignore<br />
+%word1,word2,... <span style="padding-left:71px"></span> - list of top words, in popularity order<br />
+TID,MXMID,idx:cnt,idx:cnt,...<span style="padding-left:5px"></span> - track ID from MSD, track ID from musiXmatch,<br />
+<span style="padding-left:190px"></span>then word index : word count (word index starts at 1!)</p>
+<h2><a name='getting'>Getting the dataset</a></h2>
+<p>Here is the <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_dataset_train.txt.zip">train file</a> and here is the <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_dataset_test.txt.zip">test file</a>. The top 5,000 words are the same for both. That said, we strongly encourage you to use the SQLite version below, it is faster and more convenient.</p>
+<p>To help you deal with this data, we also provide it as an <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_dataset.db">SQLite database</a>. The details can be found in the <a href="https://github.com/tb2332/MSongsDB/blob/master/Tasks_Demos/Lyrics/README.txt">README</a>, and the code to recreate it is this <a href="https://github.com/tb2332/MSongsDB/blob/master/Tasks_Demos/Lyrics/mxm_dataset_to_db.py">python code</a>. You might also want to check this <a href="http://labrosa.ee.columbia.edu/millionsong/blog/11-4-11-musixmatch-dataset-connecting-lyrics">blog post</a>.</p>
+<p>The full list of <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_779k_matches.txt.zip">779K matches with musiXmatch</a> is also provided, the format is described in the header.</p>
+<p>Then, we release the <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/full_word_list.txt.zip">full list of stemmed words</a> and the total word counts, i.e. all the words that were seen at least once. There are 498,134 unique words, for a total of 55,163,335 occurrences. The 5,000 words in the dataset account for 50,607,582 occurrences, so roughly 92%. NOTE 1: for choosing our 5,000 words, we normalized the word counts by the number of word occurrences in each song. Thus, it is not the top 5,000 of this file. NOTE 2: the list is super noisy, we know it! We made sure that the top 5,000 words was clean, but for the rest, no guarantee whatsoever, the bottom of the list is a mess (punctuation signs, foreign symbols, words glued together, ... name it, it's there).<br />
+P.S. thanks to <a href="http://crr.ugent.be/members/marc-brysbaert">Marc Brysbaert</a> for his feedback and the request of this list.</p>
+<p>Finally, if you work with visualizing lyrics, stemmed ones are annoying, as <a href="http://www.last.fm/user/andrewclegg">Andrew Clegg</a> pointed out to us. Therefore, here is a list of <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/mxm_reverse_mapping.txt">unstemmed words</a> with their stemmed version. Of course, it is only one possible list, the goal of stemming is that many related words are mapped onto the same one. But it should still improve the comprehension, for instance it maps 'victori'->'victory'.</p>
+<p>If you want to better understand our bag-of-words creation process, including the stemming, or if you want to complement the dataset from your own lyrics collection, use this <a href="https://github.com/tb2332/MSongsDB/blob/master/Tasks_Demos/Lyrics/lyrics_to_bow.py">python code</a>.</p>
+<h2><a name='api'>musiXmatch API</a></h2>
+<p>A few words on <a href="http://developer.musixmatch.com/">musiXmatch API</a> which you can use to complement the dataset.</p>
+<p>You can access the API using these <a href="http://support.musixmatch.com/forums/300940-resources-libraries">wrappers</a>, including the python one I collaborated on.</p>
+<h2><a name='faq'>FAQ</a></h2>
+<p><strong>Why use bag-of-words and not the original lyrics?</strong><br />
+<small>The actual lyrics are protected by copyright and we do not have permissions to redistribute them.  However, by releasing only the word counts over a finite dictionary, we are providing a statistical description which respects the authors' copyright, yet provides what we believe is enough data to perform a wide range of interesting research.</small></p>
+<p><strong>Why use stemming?</strong><br />
+<small>Stemming is very commonly used in this kind of text analysis task.  For statistical purposes, it is more interesting to treat "cry", "cried", and "crying" as instances of the same thing, rather than treating them as distinct, unrelated tokens.  We use a simple, well-known stemming algorithm (Porter2) (which for this example maps all these words to "cri"). We added extra pre-processing rules, meaning we don;t follow the real <a href="http://snowball.tartarus.org/algorithms/english/stemmer.html">Porter2 specs</a>, see the next point 'stemming++'</small></p>
+<p><strong>stemming++</strong><br />
+<small>We added rules to the regular stemming algorithm. It might not have been a good idea, but the goal was to maximize the info held by a limited number of top words. Here is the full <a href="https://github.com/tb2332/MSongsDB/blob/master/Tasks_Demos/Lyrics/lyrics_to_bow.py">lyrics to bag-of-words</a> algorithm. That explains why some punctuation is simply removed. Also why "I'm" is never seen, it becomes "I am". Note the mistake we made with "n't " -> "n not", should have been -> "n not ". It explains why "can't" becomes "ca not". We hope none of this will cause too much trouble in your research. To get a better intuition, here is a list of 10K popular <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/stemmed_words.txt.zip">English words and how they would appear in the dataset</a>. Thanks to <a href="http://perso.telecom-paristech.fr/~fevotte/">C. Févotte</a> for uncovering some of these issues.</small></p>
+<p><strong>Why a limited number of top words?</strong><br />
+<small>The most popular words provide the most relevant information in the lyrics.  If we told you which single song includes the lyric "deathray", it wouldn't be very interesting from a statistical modeling point of view.  But telling you which 157 songs include "silk" (one of the least-popular words we include) could actually be useful.<br />
+Note that stemming and limited dictionary also help us to respect copyrights.<br />
+P.S. if you do possess a deathray, please don't take it personally.</small></p>
+<p><strong>What is the licensing?</strong><br />
+<small>Research only, strictly non-commercial. Also, musiXmatch has the right to advertise and refer to any work derived from the dataset. For details, contact <a href="http://musixmatch.com/about_us/">MusiXmatch</a>.</small></p>
+<p><strong>Why two files?</strong><br />
+<small>We believe that, for some applications, the use of a test set will be important and we want it to be standard. We used the same split as for automatic tagging. That said, if you concatenate the two files, you'll get back the full dataset.<br />
+</small></p>
+<p><strong>How to cite the dataset?</strong><br />
+<small>You should cite this publication [<a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/millionsong_ismir11_1.bib">bib</a>].<br />
+Additionally, you can mention / link to this web resource:</small></p>
+<pre>
+musiXmatch dataset, the official lyrics collection for the Million Song Dataset, 
+available at: <a href="http://labrosa.ee.columbia.edu/millionsong/musixmatch" title="http://labrosa.ee.columbia.edu/millionsong/musixmatch">http://labrosa.ee.columbia.edu/millionsong/musixmatch</a>
+</pre><p></p>
+<p><strong>What is the relationship between musiXmatch and the MSD?</strong><br />
+<small>musiXmatch generously donated data to create the musiXmatch dataset, referenced against the Million Song Dataset. The dataset was created by the MSD team with the approval of the final result by musiXmatch. musiXmatch is not responsible for any other part of the MSD project.</small></p>
+<p><strong>How was the dataset created?</strong><br />
+<small>MusiXmatch provided a list of matches based on artist names and song titles for about 77% of the million tracks. We retrieve the lyrics for these files. Note that many lyrics were not available to us for copyrights issues. Also, mXm has some tracks that it knows about without having the lyrics. Then, we removed the instrumental tracks (the one with less than 3 words or specifically identified as instrumental by mXm). Finally, we removed the duplicates based on the official <a href="http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/msd_duplicates.txt">MSD duplicates list</a> and the mXm track ID. We had access to the words in a random order, and we stemmed them using this <a href="http://pypi.python.org/pypi/stemming/1.0">Porter2 algorithm</a>.</small></p>
+<p><strong>Who can I contact for additional help?</strong><br />
+<small><a href="mailto:tb2332@columbia.edu">Thierry Bertin-Mahieux</a> is still a good first try. Otherwise, you can try the MSD mailing list. For a musiXmatch specific question, please <a href="http://www.musixmatch.com">contact them</a> directly.</small></p>
+<h2><a name='work'>Work using the dataset</a></h2>
+<ul>
+<li><a href="http://blog.last.fm/2011/06/22/lyric-clouds-genre-maps-and-distinctive-words">Last.fm blog</a>, June 2011</li>
+<li><strong>CCA and a Multi-way Extension for Investigating Common Components between Audio, Lyrics and Tags</strong>, M. McVicar and T. De Bie, <em>CMMR '12</em> [<a href="http://cmmr2012.eecs.qmul.ac.uk/sites/cmmr2012.eecs.qmul.ac.uk/files/pdf/papers/cmmr2012_submission_61.pdf">pdf</a>]
+</li>
+<li><strong>Ranking lyrics for online search</strong>, R. Macrae and S. Dixon, <em>ISMIR '12</em> [<a href="http://ismir2012.ismir.net/event/papers/361-ismir-2012.pdf">pdf</a>]
+</li>
+<li><strong>Maximum marginal likelihood estimation for nonnegative dictionary learning in the Gamma-Poisson Model</strong>, O. Dikmen and C. Févotte, <em>IEEE Transactions on Signal Processing, Oct. 2012</em> [<a href="http://www.tsi.enst.fr/~fevotte/Journals/ieee_sp_mmle.pdf">pdf</a>]
+</li>
+<li><strong>Learning the B-Divergence in Tweedie Compound Poisson Matrix<br />
+Factorization Models</strong>, U. Simsekli, A. Cemgil and Y. Yilmaz, <em>ICML 2013</em> [<a href="http://jmlr.org/proceedings/papers/v28/simsekli13.pdf">pdf</a>]
+</li>
+</ul>
+  </div>
+  </div>          </div>
+          <!-- END CONTENT -->
+                            </div>
+        <!-- END MAIN INNER -->
+      </div>
+      <!-- END MAIN -->
+              <div id="sidebar-right" class="sidebar">
+          <div class="inner">
+          <div id="block-block-3" class="block block-block block-odd region-odd clearfix ">
+      <h3 class="title">News</h3>
+    <div class="content">
+    <p><strong>April 25, 2012</strong><br />
+The <a href="http://www.kaggle.com/c/msdchallenge">MSD Challenge</a> has launched!</p>
+<p><strong>October 20, 2011</strong><br />
+We release the <a href="http://labrosa.ee.columbia.edu/millionsong/lastfm">Last.fm</a> dataset of tags and similarity!</p>
+<p><strong>April 12, 2011</strong><br />
+We release the <a href="http://labrosa.ee.columbia.edu/millionsong/musixmatch">musiXmatch</a> dataset of lyrics!</p>
+<p><strong>March 15, 2011</strong><br />
+We release the <a href="http://labrosa.ee.columbia.edu/millionsong/secondhand">SecondHandSongs</a> dataset of cover songs!</p>
+<p><strong>February 8, 2011</strong><br />
+We release the dataset!<br />
+(and get Dan to <a href="http://labrosa.ee.columbia.edu/millionsong/blog/11-2-8-why-million-song-dataset">blog</a>)</p>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-2" class="block block-block block-even region-even clearfix ">
+      <h3 class="title">Quick links</h3>
+    <div class="content">
+    <p><a href="http://labrosa.ee.columbia.edu/">LabROSA</a><br />
+<a href="http://the.echonest.com/">The Echo Nest</a><br />
+<a href="http://musicbrainz.org/">Musicbrainz</a><br />
+<a href="http://infochimps.com/">Infochimps</a><br />
+<a href="http://us.7digital.com/">7digital</a><br />
+<a href="http://www.last.fm/">Last.fm</a><br />
+<a href="http://www.musixmatch.com">musiXmatch</a><br />
+<a href="http://www.secondhandsongs.com/">SecondHandSongs</a></p>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-5" class="block block-block block-odd region-odd clearfix ">
+      <h3 class="title">Main contact</h3>
+    <div class="content">
+    <p><a href="http://groups.google.com/group/millionsongdataset">MSD mailing list</a></p>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-6" class="block block-block block-even region-even clearfix ">
+      <h3 class="title">Random track</h3>
+    <div class="content">
+    <small><span id='randomtrack'></span></small>
+<center><button type="button" onclick="randomTrack();">new track</button></center>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-4" class="block block-block block-odd region-odd clearfix ">
+      <h3 class="title">Random ISMIR paper</h3>
+    <div class="content">
+    <small><span id='randomismir'></span></small>
+<center><button type="button" onclick="randomIsmirPaper();">new paper</button></center>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-google-groups-gg1" class="block block-google-groups block-even region-even clearfix ">
+      <h3 class="title">Subscribe to MSD Mailing List</h3>
+    <div class="content">
+    <form action="http://groups.google.com/group/millionsongdataset/boxsubscribe">
+  <div class="gg-subscribe-form">
+    <p>
+      <label for="google-groups-email" >Email:</label>
+      <input  id="google-groups-email" class="input-text" type="text" name="email" />
+    </p>
+    <p><input class="input-submit" type="submit" name="sub" value="Subscribe" /></p>
+    <a href="http://groups.google.com/group/millionsongdataset"><img src="http://groups.google.com/groups/img/3nb/groups_bar.gif" height="26" width="132" alt="Google Groups" /></a>
+  </div>
+</form>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-search-0" class="block block-search block-odd region-odd clearfix ">
+      <h3 class="title">Search the site</h3>
+    <div class="content">
+    <form action="/millionsong/musixmatch"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item form-item-textfield" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">(NOT THE DATA): </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-821fabd5081bedc3b0cb4e2f5763bff4" value="form-821fabd5081bedc3b0cb4e2f5763bff4"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-addthis-0" class="block block-addthis block-even region-even clearfix ">
+      <h3 class="title">AddThis</h3>
+    <div class="content">
+    
+      <a class="addthis-button" href="http://www.addthis.com/bookmark.php"
+        onfocus="return addthis_open(this, '', '[URL]', '[TITLE]')"
+        onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')"
+        onblur="addthis_close()"
+        onmouseout="addthis_close()"
+        onclick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-share.gif" width="125" height="16" alt="share" class="addthisimage" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-user-0" class="block block-user block-odd region-odd clearfix style-menu ">
+      <h3 class="title">User login</h3>
+    <div class="content">
+    <form action="/millionsong/musixmatch?destination=node%2F73"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item form-item-textfield" id="edit-openid-identifier-wrapper">
+ <label for="edit-openid-identifier">Log in using OpenID: </label>
+ <input type="text" maxlength="255" name="openid_identifier" id="edit-openid-identifier" size="13" value="" class="form-text" />
+ <div class="description"><a href="http://openid.net/">What is OpenID?</a></div>
+</div>
+<div class="form-item form-item-textfield form-item-required" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item form-item-password form-item-required" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Log in"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-6222b8427b98212352827c0611eb13a2" value="form-6222b8427b98212352827c0611eb13a2"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+<input type="hidden" name="openid.return_to" id="edit-openid.return-to" value="http://labrosa.ee.columbia.edu/millionsong/openid/authenticate?destination=node%2F73"  />
+<div class="item-list"><ul><li class="openid-link first"><a href="/millionsong/%2523">Log in using OpenID</a></li>
+<li class="user-link last"><a href="/millionsong/%2523">Cancel OpenID login</a></li>
+</ul></div><div class="item-list"><ul><li class="first last"><a href="/millionsong/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div>
+</div></form>
+  </div>
+</div>
+<!-- /block.tpl.php -->          </div>
+        </div>
+      <!-- END SIDEBAR RIGHT -->
+          </div>
+    <!-- END CONTAINER -->
+    <div class="push">&nbsp;</div>
+  </div>
+  <!-- END WRAPPER -->
+  <div id="footer" class="layout-region">
+    <div id="footer-inner">
+                </div>
+  </div>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-20981149-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+  </body>
+</html>
