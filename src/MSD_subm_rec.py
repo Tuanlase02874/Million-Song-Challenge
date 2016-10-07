@@ -27,20 +27,23 @@
 import sys
 import MSD_util,MSD_rec
 
-user_min,user_max,osfile=sys.argv[1:]
-user_min=int(user_min)
-user_max=int(user_max)
+#user_min,user_max,osfile=sys.argv[1:]
+#user_min=int(user_min)
+#user_max=int(user_max) 110.000
+user_min=0
+user_max=10000
+osfile="recomend2.txt"
 
 print "user_min: %d , user_max: %d"%(user_min,user_max)
 sys.stdout.flush()
 
 # TRIPLETS
-f_triplets_tr="train_triplets.txt"
-f_triplets_tev="kaggle_visible_evaluation_triplets.txt"
+f_triplets_tr="..\data\\kaggle_visible_evaluation_triplets.txt"
+f_triplets_tev="..\data\\kaggle_visible_evaluation_triplets.txt"
 
 print 'loading users in %s'%"kaggle_users.txt"
 sys.stdout.flush()
-users_v=list(MSD_util.load_users("kaggle_users.txt"))
+users_v=list(MSD_util.load_users("..\data\\kaggle_users.txt"))
 
 print 'default ordering by popularity'
 sys.stdout.flush()
@@ -83,7 +86,7 @@ cp.Add(pr)
 cp.Gamma=[1.0]
 
 r=cp.RecommendToUsers(users_v[user_min:user_max],u2s_v)
-MSD_util.save_recommendations(r,"kaggle_songs.txt",osfile)
+MSD_util.save_recommendations(r,"..\data\\kaggle_songs.txt",osfile)
 
 
 

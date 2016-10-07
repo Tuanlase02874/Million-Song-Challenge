@@ -1,0 +1,21 @@
+user_min: 1 , user_max: 100
+loading users in kaggle_users.txt
+default ordering by popularity
+loading unique users indexes
+song to users on ..\data\kaggle_visible_evaluation_triplets.txt
+converting users to indexes
+user to songs on ..\data\kaggle_visible_evaluation_triplets.txt
+Creating predictor..
+Creating recommender..
+10] fdf6afb5daefb42774617cf223475c6013969724 w/ 10 songs  tot secs: 26.980358 (2.698036)
+20] 4b9b549e84fb29bfbcf7ab34f01c0bcd1bbf93a5 w/ 23 songs  tot secs: 68.653807 (3.432690)
+30] 47bf07bcb932cf88175ba3eb218401f9fa15fe6b w/ 26 songs  tot secs: 100.065425 (3.335514)
+40] dc03114dc0a52c407d1548a403c8af85a82fcb4a w/ 12 songs  tot secs: 131.308814 (3.282720)
+50] 9de45f3b754cdc54410f1b4529648bdff9c68fca w/ 6 songs  tot secs: 163.668245 (3.273365)
+60] 202c63cd3568680561e84d33bc35740d662efccf w/ 9 songs  tot secs: 193.039242 (3.217321)
+70] d644a69852457a0e2d290e0d57979d775020906b w/ 9 songs  tot secs: 235.502606 (3.364323)
+80] fb370fdad515525ba15cc02e1ddd9243002aa547 w/ 28 songs  tot secs: 269.705889 (3.371324)
+90] 497954309ea6d10b831f49af4f46c2975447e957 w/ 11 songs  tot secs: 295.947770 (3.288309)
+Loading song indices from ..\data\kaggle_songs.txt
+Saving recommendations
+Ok.
